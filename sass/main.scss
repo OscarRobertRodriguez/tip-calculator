@@ -1,0 +1,22 @@
+
+
+@import "~normalize-scss/fork-versions/default/_normalize.scss";
+
+// abstracts
+@import "abstracts/general";
+@import "abstracts/functions";
+@import "abstracts/colors";
+@import "abstracts/mixins";
+@import "abstracts/typography";
+
+
+// base
+@import "base/typography";
+
+// layout
+   @import "layout/general";
+   @import "layout/footer";
+
+body {
+  background: red;
+}

@@ -1,0 +1,19 @@
+
+
+
+@mixin mq($size) {
+  $value : map-get($breakpoints, $size);
+  @media screen and (max-width: $value) {
+      @content;
+  }
+}
+
+
+@mixin mq-large() {
+  $value : map-get($breakpoints, large);
+  @media screen and (min-width: $value) {
+    @content;
+  }
+}
+
+
