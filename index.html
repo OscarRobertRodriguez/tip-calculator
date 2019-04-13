@@ -11,19 +11,31 @@
 <body>
 
 <div class="calc">
-    <a class="button button__reset" href="#">reset</a>
-    <h1 class="calc__title">Tip:<span class="calc__tip"></span></h1>
-    <input type="text" placeholder="enter bill total here">
+    <!--<a class="btn calc__reset" href="#">reset</a>-->
+    <h1 class="calc__title">Tip Calculator</h1>
+      <div class="calc__row">
+        <h2 class="calc__item">Bill total:</h2>
+        <input type="text" placeholder="enter bill total">
+      </div>
 
-    <h2>Select tip percentage <span>(avg is 15%)</span></h2>
-    <ul class="calc__buttons">
-        <a class="button" href="#">10%</a>
-        <a class="button" href="#">15%</a>
-        <a class="button" href="#">20%</a>
-    </ul>
+    <div class="calc__row">
+        <h2 class="calc__item">Tip:</h2>
+        <input type="text" placeholder="enter tip">
+    </div>
 
-    <a class="button button__calc" href="">Calculate</a>
+    <div class="calc__row">
+        <h2 class="calc__item">Total:</h2>
+        <input id="total" type="text" disabled>
+    </div>
+
+    <p class="calc__question">Did you leave a good tip?</p>
+
+    <p class="calc__rating">?</p>
 </div>
+
+<footer>
+    created by oscar 2019
+</footer>
 
 <script src="./index.js"></script>
 </body>

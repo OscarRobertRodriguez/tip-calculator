@@ -1,0 +1,28 @@
+
+
+.btn {
+  padding: .2rem;
+  color: orangered;
+  border: 1px solid currentColor;
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+  font-family: $ff-serif;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: color .9ms ease-in;
+
+  &:hover {
+    background: orangered;
+    color: #fff;
+
+  }
+
+
+
+  &__calc {
+    justify-self: center;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+}

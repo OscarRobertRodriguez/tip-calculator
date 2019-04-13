@@ -17,3 +17,13 @@ img {
 }
 
 
+
+body {
+  display:grid;
+  grid-template-rows: 1fr 50px;
+  align-items: center;
+  padding: 0 1rem;
+  justify-items: center;
+  background: url("/assets/waitress.png") no-repeat;
+  background-size: cover;
+}

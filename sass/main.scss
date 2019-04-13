@@ -13,10 +13,12 @@
 // base
 @import "base/typography";
 
+
 // layout
    @import "layout/general";
+   @import "layout/calculator";
    @import "layout/footer";
 
-body {
-  background: red;
-}
+
+// components
+@import "components/buttons";
