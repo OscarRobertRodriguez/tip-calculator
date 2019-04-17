@@ -15,12 +15,14 @@
     <h1 class="calc__title">Tip Calculator</h1>
       <div class="calc__row">
         <h2 class="calc__item">Bill total:</h2>
-        <input type="text" placeholder="enter bill total">
+        <input id="billTotal" type="number" min="1"  step="any"   placeholder="enter bill total"
+               oninput="this.value=this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, `$1`)">
       </div>
 
     <div class="calc__row">
         <h2 class="calc__item">Tip:</h2>
-        <input type="text" placeholder="enter tip">
+        <input id="tip" type="number" min="1" step="any" placeholder="enter tip"
+        oninput="this.value=this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, `$1`)">
     </div>
 
     <div class="calc__row">
